@@ -1,0 +1,467 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+.header-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 0 auto;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.container-h1{
+    position: relative;
+    right: 16.5rem;
+    color: #D6000D;
+    font-style: italic;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.container-ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 11rem;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    list-style: none;   
+}
+
+.container-ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-header{
+    background-color: #D6000D;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 0.6rem 3rem;
+}
+
+.top-flex{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.top-flex > figure > img{
+    width: 500px;
+}
+
+.top-text{
+    align-self: center;
+}
+
+.top-text > p{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.top-text > h2{
+    font-size: 3rem;
+    color: #D6000D;
+}
+
+.btn-top{
+    background-color: #D6000D;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 0.7rem 2.7rem;
+    margin-top: 2em;
+}
+
+.low-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 9.5rem;
+}
+
+.low-ul{
+    font-size: 1.2rem;
+    font-weight: 540;
+    list-style: none;
+}
+
+.low-ul > li::before{
+    content: url('assets/teste_02.png');
+    position: relative;
+    top: 0.8rem;
+    right: 1rem;
+}
+
+.low-flex > figure > img{
+    max-width: 500px;
+    min-width: 320px;
+}
+
+.main-form{
+    display: flex;
+    width: 0 auto;
+    padding-top: 0.5rem;
+}
+
+.main-form > form {
+    position: relative;
+    right: 17rem;
+    margin: 0 auto;
+}
+
+.main-form form > fieldset{
+    border: none;
+}
+
+.main-form form > fieldset > legend{
+    font-size: 1.2rem;
+    font-weight: bold; 
+}
+
+.main-form form > fieldset > input[type="tel"]{
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    margin-top: 0.5rem;
+}
+
+.btn-form{
+    background-color: #D6000D;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin-left: 5px;
+    padding: 0.8rem 2rem;
+}
+
+.perfil{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    margin-top: 15rem;
+    margin-bottom: 4rem;
+}
+
+.perfil > article > h3{
+    padding-top: 0.5rem;
+}
+
+.perfil > article >  h3, .perfil > article >  h4{
+    position: relative;
+    left: 5.5rem;
+}
+
+.para-img::before{
+    content: '';
+    background-color: #D6000D;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-right: 1rem;
+    display: block;
+    float: left;
+}
+
+.info-pedro{
+    max-width: 500px;
+    height: 0 auto;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    background-color: lightgrey;
+}
+
+.info-maria{
+    max-width: 450px;
+    height: 0 auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: lightgrey;
+}
+
+.para-img{
+    overflow: auto;
+    font-size: 1.1rem;
+}
+
+.footer-section{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    color: white;
+    width: 100%;
+    height: 0 auto;
+    margin: 0 auto;
+    background-color: black;
+    padding: 4rem 2.5rem;
+}
+
+.footer-h2 > h2{
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section > div > h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+}
+
+.footer-section > div > p{
+    font-size: 1.1rem;
+}
+
+.footer-section > div > figure > img{
+    width: 40px;
+    height: 30px;
+    margin-right: 0.6rem;
+}
+
+.para-esp{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+@media(max-width:1200px){
+    .header-section{
+        justify-content: space-between;
+    }
+
+    .container-h1{
+        position: initial;
+    }
+
+    .container-ul{
+        position: initial;
+        right: 0;
+        margin-right: 5rem;
+    }
+}
+
+@media(max-width:1157px){
+    .perfil{
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .info-pedro, .info-maria{
+       width: 40%;
+    }
+
+    .top-flex > figure > img{
+        width: 400px;
+    }
+}
+
+@media(max-width:1143px){
+    .container-h1{
+        padding: 2rem 0;
+    }
+
+    .footer-section{
+        justify-content: space-between;
+        gap: 0;
+    }
+
+
+}
+
+@media(max-width:930px){
+    .header-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .low-flex{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .low-ul{
+        order: 2;
+    }
+
+    .main-form{
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .main-form > form{
+        position: initial;
+   }
+
+   .perfil{
+       align-items: center;
+       flex-direction: column;
+       width: 100%;
+   }
+
+   .info-pedro, .info-maria{
+       width: 60%;
+    }
+}
+
+@media(max-width:810px){
+    .footer-section{
+        flex-direction: column;
+    }   
+
+    .footer-h2{
+        align-self: center;
+    }
+
+    .para-esp{
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:768px){
+    .container-h1{
+        font-size: 3rem;
+    }
+
+    .header-section > nav{
+        width: 100%;
+    }
+
+    .container-ul{
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-left: 7rem;
+        gap: 3rem;
+    }
+
+    .btn-header{
+        display: none;
+    }
+
+    .top-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-top{
+        padding: 1rem 4.5rem;
+    }
+
+    .main-form > form > fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-form{
+        margin-top: 1rem;
+    }
+
+    .perfil{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-section{
+        width: 100%;
+    }
+}
+
+@media(max-width:637px){
+    .container-ul{
+        width: 100%;
+        margin-left: 0;
+     }
+
+    .top-flex > figure > img{
+        width: 320px;
+    }
+
+    .low-flex > figure > img{
+        width: 320px;
+    }
+
+     .info-maria, .info-pedro{
+         width: 90%;
+     }
+
+     .para-img::before{
+        width: 60px;
+        height: 60px;
+    }
+
+    .para-img{
+        font-size: 0.9rem;
+    }
+
+     .perfil > article >  h3, .perfil > article >  h4{
+        position: relative;
+        left: 4.7rem;
+    }
+}
+
+@media(max-width:413px){
+    .container-ul{
+        font-size: 1.1rem;
+        margin-left: 1rem;
+    }
+
+    .top-text > h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:320px){
+    .container-h1{
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+
+    .para-align{
+        position: relative;
+        left: 4.7rem;
+    }
+
+    .btn-top{
+        padding: 1rem 2rem;
+    }
+
+    .footer-section{
+        padding: 1.5rem 2rem;
+    }
+
+    .footer-h2 > h2{
+        text-align: center;
+    }
+
+}
+
+
