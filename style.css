@@ -7,6 +7,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 
+body{
+    background-color: bisque;
+}
+
 .header-section{
     display: flex;
     flex-wrap: wrap;
@@ -115,8 +119,7 @@
 }
 
 .low-flex > figure > img{
-    max-width: 500px;
-    min-width: 320px;
+    width: 500px;
 }
 
 .main-form{
@@ -288,8 +291,6 @@
         justify-content: space-between;
         gap: 0;
     }
-
-
 }
 
 @media(max-width:930px){
@@ -305,6 +306,7 @@
 
     .low-flex{
         flex-direction: column;
+        align-items: center;
         gap: 2rem;
     }
 
@@ -401,17 +403,9 @@
         margin-left: 0;
      }
 
-    .top-flex > figure > img{
-        width: 320px;
+    .info-maria, .info-pedro{
+        width: 315px;
     }
-
-    .low-flex > figure > img{
-        width: 320px;
-    }
-
-     .info-maria, .info-pedro{
-         width: 90%;
-     }
 
      .para-img::before{
         width: 60px;
@@ -422,32 +416,65 @@
         font-size: 0.9rem;
     }
 
-     .perfil > article >  h3, .perfil > article >  h4{
+    .perfil > article >  h3, .perfil > article >  h4{
         position: relative;
         left: 4.7rem;
     }
 }
 
-@media(max-width:413px){
+@media(max-width:500px){
+    .header-section{
+        gap: 1.5rem;
+    }
+
+    .container-h1{
+        padding: 0;
+        margin-top: 3rem;
+    }
+
     .container-ul{
         font-size: 1.1rem;
         margin-left: 1rem;
     }
 
+    .top-flex{
+        margin-top: 2.5rem;
+        gap: 3rem;
+    }
+
     .top-text > h2{
         font-size: 2.5rem;
     }
+    
+    .container-h1, .container-ul, .main-form{
+        position: initial;
+    }
+
+    .top-flex > figure > img, .low-flex > figure > img{
+        width: 250px;
+        margin-left: 1rem;
+    }
+
+    .main-form form > fieldset > legend{
+        font-size: 1rem;
+    }
+    
+    .main-form form > fieldset > input[type="tel"]{
+        width: 13rem;
+        margin-left: 1rem;
+    }
+    
+    .btn-form{
+        width: 13rem;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
 }
 
-@media(max-width:320px){
+@media(max-width:375px){
     .container-h1{
         font-size: 2rem;
         margin-right: 2rem;
-    }
-
-    .para-align{
-        position: relative;
-        left: 4.7rem;
     }
 
     .btn-top{
@@ -462,6 +489,7 @@
         text-align: center;
     }
 
+    .info-maria, .info-pedro{
+        width: 315px;
+    }
 }
-
-
