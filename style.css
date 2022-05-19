@@ -9,10 +9,9 @@
 
 .header-section{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 0 auto;
+    width: 100%;
     gap: 2rem;
     margin: 0 auto;
 }
@@ -34,7 +33,7 @@
     gap: 2rem;
     font-size: 1.2rem;
     font-weight: 550;
-    list-style: none;   
+    list-style: none;  
 }
 
 .container-ul > li > a{
@@ -61,7 +60,7 @@
     margin-top: 5rem;
 }
 
-.top-flex > figure > img{
+.top-flex > figure > img, .low-flex > figure > img{
     width: 500px;
 }
 
@@ -114,13 +113,9 @@
     right: 1rem;
 }
 
-.low-flex > figure > img{
-    width: 500px;
-}
-
 .main-form{
     display: flex;
-    width: 0 auto;
+    width: 100%;
     padding-top: 0.5rem;
 }
 
@@ -161,34 +156,30 @@
 .perfil{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 4rem;
     width: 100%;
     margin-top: 15rem;
     margin-bottom: 4rem;
 }
 
-.perfil > article > h3{
-    padding-top: 0.5rem;
-}
-
-.perfil > article >  h3, .perfil > article >  h4{
-    position: relative;
-    left: 5.5rem;
+.perfil article h3{
+    padding-top: 1rem;
 }
 
 .para-img::before{
     content: '';
     background-color: #D6000D;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     margin-right: 1rem;
     display: block;
-    float: left;
 }
 
 .info-pedro{
-    max-width: 500px;
+    display: flex;
+    width: 480px;
     height: 0 auto;
     border-radius: 1rem;
     padding: 1.2rem;
@@ -196,16 +187,16 @@
 }
 
 .info-maria{
-    max-width: 450px;
+    display: flex;
+    width: 480px;
     height: 0 auto;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.2rem;
     background-color: lightgrey;
 }
 
-.para-img{
-    overflow: auto;
-    font-size: 1.1rem;
+.info-maria div p{
+    width: 300px;
 }
 
 .footer-section{
@@ -269,18 +260,14 @@
         gap: 2rem;
     }
 
-    .info-pedro, .info-maria{
-       width: 40%;
-    }
-
-    .top-flex > figure > img{
-        width: 400px;
+    .top-flex > figure > img, .low-flex > figure > img{
+        width: 430px;
     }
 }
 
 @media(max-width:1143px){
     .container-h1{
-        padding: 2rem 0;
+        padding-top: 2rem;
     }
 
     .footer-section{
@@ -289,15 +276,30 @@
     }
 }
 
-@media(max-width:930px){
+@media(max-width:995px){
     .header-section{
         flex-direction: column;
-        align-items: center;
+        gap: 0rem;
+    }
+
+    .container-h1{
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-section > nav{
+        width: 100%;
+    }
+
+    .container-ul{
+        width: 100%;
+        justify-content: center;
     }
 
     .top-flex{
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
     .low-flex{
@@ -315,28 +317,23 @@
         margin-top: 2rem;
     }
 
-    .main-form > form{
+    .main-form > form, .container-h1, .container-ul, .main-form{
         position: initial;
    }
-
-   .perfil{
-       align-items: center;
-       flex-direction: column;
-       width: 100%;
-   }
-
-   .info-pedro, .info-maria{
-       width: 60%;
-    }
 }
 
 @media(max-width:810px){
+    .btn-header{
+        display: none;
+    }
+
     .footer-section{
         flex-direction: column;
     }   
 
     .footer-h2{
-        align-self: center;
+        text-align: center;
+        width: 100%;
     }
 
     .para-esp{
@@ -344,148 +341,69 @@
     }
 }
 
-@media(max-width:768px){
-    .container-h1{
-        font-size: 3rem;
-    }
-
-    .header-section > nav{
-        width: 100%;
-    }
-
+@media(max-width:500px){
     .container-ul{
-        justify-content: center;
-        font-weight: bold;
-        font-size: 1.5rem;
-        margin-left: 7rem;
-        gap: 3rem;
+        font-size: 1rem;
     }
 
-    .btn-header{
-        display: none;
+    .top-text h2{
+        font-size: 2.3rem;
     }
 
-    .top-text{
-        width: 100%;
-        text-align: center;
+    .top-text p{
+        font-size: 1rem;
     }
 
     .btn-top{
-        padding: 1rem 4.5rem;
-    }
-
-    .main-form > form > fieldset{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .btn-form{
+        padding: 1rem 1.9rem;
         margin-top: 1rem;
-    }
-
-    .perfil{
-        margin-top: 5rem;
-        margin-bottom: 2rem;
-    }
-
-    .footer-section{
-        width: 100%;
-    }
-}
-
-@media(max-width:637px){
-    .container-ul{
-        width: 100%;
-        margin-left: 0;
-     }
-
-    .info-maria, .info-pedro{
-        width: 315px;
-    }
-
-     .para-img::before{
-        width: 60px;
-        height: 60px;
-    }
-
-    .para-img{
-        font-size: 0.9rem;
-    }
-
-    .perfil > article >  h3, .perfil > article >  h4{
-        position: relative;
-        left: 4.7rem;
-    }
-}
-
-@media(max-width:500px){
-    .header-section{
-        gap: 1.5rem;
-    }
-
-    .container-h1{
-        padding: 0;
-        margin-top: 3rem;
-    }
-
-    .container-ul{
-        font-size: 1.1rem;
-        margin-left: 1rem;
-    }
-
-    .top-flex{
-        margin-top: 2.5rem;
-        gap: 3rem;
-    }
-
-    .top-text > h2{
-        font-size: 2.5rem;
-    }
-    
-    .container-h1, .container-ul, .main-form{
-        position: initial;
     }
 
     .top-flex > figure > img, .low-flex > figure > img{
         width: 250px;
-        margin-left: 1rem;
+    }
+
+    .low-ul{
+        font-size: 1rem;
+        font-weight: 550;
+    }
+
+    .main-form{
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .main-form form > fieldset{
+        display: flex;
+        flex-direction: column;
     }
 
     .main-form form > fieldset > legend{
         font-size: 1rem;
     }
-    
+
     .main-form form > fieldset > input[type="tel"]{
-        width: 13rem;
-        margin-left: 1rem;
+        width: 14.5rem;
+        margin-top: 0.5rem;
     }
     
     .btn-form{
-        width: 13rem;
+        width: 14.5rem;
+        margin-top: 0.5rem;
         padding: 1rem;
-        margin-left: 1rem;
-    }
-}
-
-@media(max-width:375px){
-    .container-h1{
-        font-size: 2rem;
-        margin-right: 2rem;
     }
 
-    .btn-top{
-        padding: 1rem 2rem;
-    }
-
-    .footer-section{
-        padding: 1.5rem 2rem;
-    }
-
-    .footer-h2 > h2{
-        text-align: center;
-    }
-
-    .info-maria, .info-pedro{
+    .info-maria,.info-pedro{
         width: 315px;
     }
+
+    .info-maria div p{
+        width: 100%;
+    }
 }
+
+@media(max-width:320px){
+    .container-ul{
+        padding-left: 2rem;
+    }
+}    
